@@ -1,0 +1,36 @@
+Question 1: 
+The question1(t,s) first checks for the length of the strings. If both are valid strings, it coompares sorted substrings of s whose lengths are equal to the length of t with the sorted substring t. If both are equal/same it returns ture, otherwise it returns false.
+
+Time complexity : O(len(n))
+
+Space Complexity : O(1)
+
+Question2:
+The question2() generates the substring, compares the substring to the reverse of itself and returns the Lengthiest string that is stored in the result. The code is efficient as generates all the possible palindromes of the substring and returns the Lengthiest possible palindrome. The function also handles exception.
+
+Time complexity : O(n^2)
+
+Space Complexity : O(1) 
+
+Question3:
+The Graph() has been wrapped in a class and empty list are created to store the vertices and dictionaries of the Graph. Each vertex and edge were added from the given adjancency list. addVertex() add a vertex and addEdge() adds an edge to the graph. findElement() helps to find set of an element i using Path Compression. createUnion() helps to create union of two sets. The minimumSpanningTree() is the main function that helps to construct Minimum Spanning Tree using the Kruskal's Algorithm. An empty list is created to store all the edges in the graph and Subsets were generated when node is in the range of the length of the vertices. The smallest Edges had been picked and were added to the final spanning tree if they dont form a cycle. Adjacency List structure had been created from the edgesof the final Minumum Spanning Tree. 
+Efficiency: 
+The Solution uses Object oriented practices and Path comression techniques. This solution uses Kruskals algorithm. The reason for choosing Kruskals over the Prim's Algorithm is  that, When dealing with graphs with edges and vertices, Kruskals algorithms runs in o(E logV ) time and Prim's algorithm runs in O( E + V logV ) amortized time. Prim's algorithm is significantly faster in the limit when you've got a really dense graph with many more edges than vertices. Kruskal performs better in typical situations (sparse graphs) because it uses simpler data structures hence a bit faster than Prim's Algorithm. 
+
+Time complexity : O(nlog(n)) n--> edges
+
+Space Complexity : O(n)
+
+Question4:
+The ancestor() returns the immediate parent/ancestor to the node n. the getAncestors() returns all the ancestors to the node n, the getAncestors() gets all the parents until the root node is found. The code is efficient as it does not run till the root on the 2nd node and returns the immediate common ancestor by comparing it with the 1st nodes ancestor list in every iteration across the loop. 
+
+Time complexity : O(nlog(n)) or O(nh) h --> height of tree
+Space Complexity : O(log(n)) or O(h) 
+
+Question5: 
+A Node has been created using the Node(). A linked list has been created using createLinkedList() and a new node has been added to the end of the linkedlist. The length() helps finding the Length of the Linked List. The varibleLocation() helps in finding the nth variable from the end of the linked list. 
+Efficiency: LinkedList have been used in the solution as the LinkedLists are Dynamic Data Structures that can grow and Shrink, allocate and delocate memory while the program is running. Insertion and deletion is also easily implemented in Linked Lists. Dynamic Data structures such as stacks and queues can also be implemented using Linked Lists. The time Complextity is O(n). 
+
+Time complexity : O(n)
+
+Space Complexity : O(1)
